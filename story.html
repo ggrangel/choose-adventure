@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Choose Your Own Adventure</title>
+  </head>
+  <body>
+    <h1>Choose Your Own Adventure!</h1>
+    <h2>{{.Title}}</h2>
+    <p>{{.Story}}</p>
+    {{range .Options}}
+    <a href="{{.Arc}}"><button>{{.Text}}</button></a>
+    {{end}}
+  </body>
+</html>
